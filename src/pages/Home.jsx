@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import SignatureCanvas from "react-signature-canvas";
-import { BlobProvider, PDFDownloadLink } from "@react-pdf/renderer";
+import { PDFDownloadLink } from "@react-pdf/renderer";
 import Letter from "../components/Letter";
 
 export default function Home() {
