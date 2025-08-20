@@ -14,7 +14,10 @@ export default function Home() {
   const sigCanvasRef = useRef();
 
   const clearSignature = () => {
-    if (sigCanvasRef.current) {
+    if (
+      sigCanvasRef.current &&
+      typeof sigCanvasRef.current.clear === "function"
+    ) {
       sigCanvasRef.current.clear();
       setSignatureDataURL(null);
     }
